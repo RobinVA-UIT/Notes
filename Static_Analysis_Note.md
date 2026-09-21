@@ -1,4 +1,4 @@
-# Check the sample
+# Initial check
 
 ## Command
 
@@ -22,6 +22,8 @@
 ---
 
 # String search
+
+If there is not many strings, there is a high chance that the malware is packed/obfuscated.
 
 ## Command
 
@@ -86,6 +88,19 @@ Print 5 strings before and 5 strings after the indicated string.
 Eliminate duplicated strings.
 
 ---
+
+# Check for packer
+
+## Tools
+
+Detect it Easy
+
+## Tricks
+
+`LoadLibrary` (`LdrLoadDll`) and `GetProcAddress` (`LdrGetProcAddress`) often appears in packed malwares.
+
+---
+
 
 # Assembly analysis
 
